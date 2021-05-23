@@ -1,0 +1,40 @@
+.card {
+  background-color: #fff;
+  padding: 1em;
+  text-align: left;
+  margin-bottom: 1rem;
+
+  h1 {
+    font-size: 1.3em;
+    color: #008b8b;
+  }
+  h1:hover {
+    text-decoration: underline;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  h3 {
+    font-size: 0.9em;
+    color: #cecece;
+  }
+  .button--reset {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .button--display {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-size: initial;
+  }
+  img {
+    max-width: 100%;
+    float: right;
+    @media screen and (min-width: 767px) {
+      margin: 0 0 2rem 2rem;
+    }
+  }
+}
