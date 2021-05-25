@@ -10,6 +10,7 @@
     "client": "node start-client.js"
   },
   "devDependencies": {
+    "@testing-library/react": "^11.2.7",
     "concurrently": "^6.1.0"
   }
 }

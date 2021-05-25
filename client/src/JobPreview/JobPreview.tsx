@@ -60,11 +60,11 @@ function JobPreview(props: Job) {
   const formattedDate = formatDate(date)
   return (
     <div className="card" key={id}>
-      <button className="button--reset" onClick={handleClick}><h1>{jobTitle}</h1></button>
+      <button className="button--reset" onClick={handleClick}><h1 data-testid="jobTitle">{jobTitle}</h1></button>
       <h2>At {companyName} - {locationName}</h2>
       <h3>Posted On {formattedDate}</h3>
       {expand && <img src={getPlacesImage(companyName)} alt="" />}
-      <span dangerouslySetInnerHTML={{ __html: desc }}></span>
+      <span data-testid="desc" dangerouslySetInnerHTML={{ __html: desc }}></span>
       <button className="button--reset button--display" onClick={handleClick}>{!expand ? '...Show More' : 'Show Less'}</button>
     </div>
   );
